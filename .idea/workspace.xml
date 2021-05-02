@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b3d1b15-1514-4544-91ad-bcdc5f356437" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="2b3d1b15-1514-4544-91ad-bcdc5f356437" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/heli/letcode/basics/str/Day2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/letcode/META-INF/letcode.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/letcode/META-INF/letcode.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/letcode/com/heli/letcode/basics/str/Day1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/letcode/com/heli/letcode/basics/str/Day1.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,38 +21,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1rmLIpBBDW0Z6cndhWJQTtK4RIr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Day1 (1)">
-    <configuration name="Day1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.str.Day1" />
-      <module name="letcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.heli.letcode.basics.str.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Day2">
     <configuration name="Day1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.chars.Day1" />
       <module name="letcode" />
@@ -60,12 +52,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.str.Day1" />
+      <module name="letcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heli.letcode.basics.str.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.chars.Day2" />
       <module name="letcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.heli.letcode.basics.chars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.str.Day2" />
+      <module name="letcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heli.letcode.basics.str.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day2" />
         <item itemvalue="Application.Day1 (1)" />
         <item itemvalue="Application.Dya3" />
         <item itemvalue="Application.Day2" />
@@ -108,10 +127,37 @@
       <workItem from="1619576244426" duration="10706000" />
       <workItem from="1619675519380" duration="9570000" />
       <workItem from="1619744489097" duration="14187000" />
+      <workItem from="1619922745267" duration="14606000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1619938296655">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1619938296655" />
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1619953765192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619953765192" />
+    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1619953765192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619953765192" />
+    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1619953765192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619953765192" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1619953765192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619953765192" />
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619935066877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1619935066877" />
   </component>
 </project>
