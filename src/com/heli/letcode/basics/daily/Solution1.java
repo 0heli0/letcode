@@ -1,13 +1,47 @@
 package com.heli.letcode.basics.daily;
 
 
-import com.heli.letcode.basics.listNode.ListNode;
+import java.util.Arrays;
 
 /**
  * @Author: YourName
  * @Date: 2021/5/14
  */
 public class Solution1 {
+    public static void main(String[] args) {
+        Solution1 solution = new Solution1();
+        int result =solution.maxUncrossedLines(new int[]{1,4,2}, new int[]{1,2,4});
+        System.out.println(result);
+
+        /*
+         * 1257 MCCLVII
+         */
+//        String result = solution.intToRoman(11);
+//        System.out.println(result);
+
+        //[9,9,9,9,9,9,9]
+        //[9,9,9,9]
+//        ListNode1 l1 = new ListNode1(9);
+//        l1.next = new ListNode1(9);
+//        l1.next.next = new ListNode1(9);
+//        l1.next.next.next = new ListNode1(9);
+//        l1.next.next.next.next = new ListNode1(9);
+//        l1.next.next.next.next.next = new ListNode1(9);
+//        l1.next.next.next.next.next.next = new ListNode1(9);
+//
+//        ListNode1 l2 = new ListNode1(9);
+//        l2.next = new ListNode1(9);
+//        l2.next.next = new ListNode1(9);
+//        l2.next.next.next = new ListNode1(9);
+//        ListNode1 result = solution.addTwoNumbers(l1, l2);
+//        System.out.print(result.val);
+//        while (result.next != null){
+//            result = result.next;
+//            System.out.print(result.val);
+//        }
+
+    }
+
     public String intToRoman(int num) {
         StringBuilder str = new StringBuilder();
         int len = 10;
@@ -99,7 +133,7 @@ public class Solution1 {
             if (flag1) {
                 val1 = l1.val;
                 l1 = l1.next;
-            }else {
+            } else {
 
             }
 
@@ -108,13 +142,12 @@ public class Solution1 {
                 l2 = l2.next;
             }
 
-            if (val1 + val2 < 10) {
+            if (val1 + val2 + overVal < 10) {
                 temp.next = new ListNode1(val1 + val2 + overVal);
-                overVal = 0;
+                overVal = (val1 + val2 + overVal) / 10;
             } else {
-                System.out.println(val1+","+val2+","+overVal);
                 temp.next = new ListNode1(val1 + val2 + overVal - 10);
-                overVal = 1;
+                overVal = (val1 + val2 + overVal) / 10;
             }
 
             temp = temp.next;
@@ -128,11 +161,11 @@ public class Solution1 {
             }
 
         }
-        while (result.next != null){
-            System.out.println(result.val);
-            result = result.next;
+        if (overVal == 1) {
+            temp.next = new ListNode1(overVal);
         }
-        return result;
+
+        return result.next;
 
     }
 
@@ -162,29 +195,20 @@ public class Solution1 {
         return pre.next;
     }
 
-    public static void main(String[] args) {
-        Solution1 solution = new Solution1();
-        /*
-         * 1257 MCCLVII
-         */
-//        String result = solution.intToRoman(11);
-//        System.out.println(result);
-
-        //[9,9,9,9,9,9,9]
-        //[9,9,9,9]
-        ListNode1 l1 = new ListNode1(9);
-        l1.next = new ListNode1(9);
-        l1.next.next = new ListNode1(9);
-        l1.next.next.next = new ListNode1(9);
-        l1.next.next.next.next = new ListNode1(9);
-        l1.next.next.next.next.next = new ListNode1(9);
-        l1.next.next.next.next.next.next = new ListNode1(9);
-
-        ListNode1 l2 = new ListNode1(9);
-        l2.next = new ListNode1(9);
-        l2.next.next = new ListNode1(9);
-        solution.addTwoNumbers(l1, l2);
-
-
+    public int maxUncrossedLines(int[] nums1, int[] nums2) {
+        int m = nums1.length;
+        int n = nums2.length ;
+        int[][] arr = new int[m+1][n+1];
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (nums1[i-1] == nums2[j-1]) {
+                    arr[i][j] = arr[i - 1][j - 1] + 1;
+                }else {
+                    arr[i][j] = Math.max(arr[i-1][j],arr[i][j-1]);
+                }
+            }
+        }
+        return arr[m][n];
     }
+
 }

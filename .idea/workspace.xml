@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b3d1b15-1514-4544-91ad-bcdc5f356437" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/heli/letcode/basics/Daily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/heli/letcode/basics/Daily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/heli/letcode/basics/daily/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/heli/letcode/basics/daily/Solution1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Daily">
+  <component name="RunManager" selected="Application.Solution1">
     <configuration name="Daily" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.Daily" />
       <module name="letcode" />
@@ -106,19 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.str.Day2" />
-      <module name="letcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.heli.letcode.basics.str.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.str.Day3" />
       <module name="letcode" />
@@ -132,13 +119,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.heli.letcode.basics.daily.Solution1" />
+      <module name="letcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heli.letcode.basics.daily.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution1" />
         <item itemvalue="Application.Daily" />
         <item itemvalue="Application.Day1 (2)" />
         <item itemvalue="Application.Day1 (1)" />
         <item itemvalue="Application.Day3" />
-        <item itemvalue="Application.Day2" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +159,10 @@
       <workItem from="1620368547568" duration="4810000" />
       <workItem from="1620607961533" duration="12066000" />
       <workItem from="1621243128019" duration="2672000" />
-      <workItem from="1621298652118" duration="1772000" />
+      <workItem from="1621298652118" duration="2748000" />
+      <workItem from="1621386252044" duration="3491000" />
+      <workItem from="1621502131653" duration="1948000" />
+      <workItem from="1621557653906" duration="2290000" />
     </task>
     <servers />
   </component>
