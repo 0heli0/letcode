@@ -2,6 +2,8 @@ package com.heli.letcode.basics.daily;
 
 
 import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  * @Author: YourName
@@ -10,7 +12,7 @@ import java.util.Arrays;
 public class Solution1 {
     public static void main(String[] args) {
         Solution1 solution = new Solution1();
-        int result =solution.maxUncrossedLines(new int[]{1,4,2}, new int[]{1,2,4});
+        String result =solution.reverseParentheses("(ed(et(oc))el)");
         System.out.println(result);
 
         /*
@@ -209,6 +211,36 @@ public class Solution1 {
             }
         }
         return arr[m][n];
+    }
+
+    public String reverseParentheses(String s) {
+        // (ed(et(oc))el)
+        // 01234567890123
+        int n = s.length();
+        int[] pair = new int[n];
+        //
+        Deque<Integer> stack = new LinkedList<Integer>();
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == '(') {
+                stack.push(i);
+            } else if (s.charAt(i) == ')') {
+                int j = stack.pop();
+                pair[i] = j;
+                pair[j] = i;
+            }
+        }
+        StringBuffer sb = new StringBuffer();
+        int index = 0, step = 1;
+        while (index < n) {
+            if (s.charAt(index) == '(' || s.charAt(index) == ')') {
+                index = pair[index];
+                step = -step;
+            } else {
+                sb.append(s.charAt(index));
+            }
+            index += step;
+        }
+        return sb.toString();
     }
 
 }
