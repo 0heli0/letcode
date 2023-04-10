@@ -1,7 +1,6 @@
 package com.heli.letcode.basics.daily;
 
 
-import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -9,9 +8,9 @@ import java.util.LinkedList;
  * @Author: YourName
  * @Date: 2021/5/14
  */
-public class Solution1 {
+public class Day03 {
     public static void main(String[] args) {
-        Solution1 solution = new Solution1();
+        Day03 solution = new Day03();
         String result =solution.reverseParentheses("(ed(et(oc))el)");
         System.out.println(result);
 
@@ -121,9 +120,9 @@ public class Solution1 {
         return "";
     }
 
-    public ListNode1 addTwoNumbers(ListNode1 l1, ListNode1 l2) {
-        ListNode1 result = new ListNode1(0);
-        ListNode1 temp = result;
+    public Day02 addTwoNumbers(Day02 l1, Day02 l2) {
+        Day02 result = new Day02(0);
+        Day02 temp = result;
         int val1 = 0;
         int val2 = 0;
         int overVal = 0;
@@ -145,10 +144,10 @@ public class Solution1 {
             }
 
             if (val1 + val2 + overVal < 10) {
-                temp.next = new ListNode1(val1 + val2 + overVal);
+                temp.next = new Day02(val1 + val2 + overVal);
                 overVal = (val1 + val2 + overVal) / 10;
             } else {
-                temp.next = new ListNode1(val1 + val2 + overVal - 10);
+                temp.next = new Day02(val1 + val2 + overVal - 10);
                 overVal = (val1 + val2 + overVal) / 10;
             }
 
@@ -164,16 +163,16 @@ public class Solution1 {
 
         }
         if (overVal == 1) {
-            temp.next = new ListNode1(overVal);
+            temp.next = new Day02(overVal);
         }
 
         return result.next;
 
     }
 
-    public ListNode1 addTwoNumbers2(ListNode1 l1, ListNode1 l2) {
-        ListNode1 pre = new ListNode1(0);
-        ListNode1 cur = pre;
+    public Day02 addTwoNumbers2(Day02 l1, Day02 l2) {
+        Day02 pre = new Day02(0);
+        Day02 cur = pre;
         int carry = 0;
         while (l1 != null || l2 != null) {
             int x = l1 == null ? 0 : l1.val;
@@ -182,7 +181,7 @@ public class Solution1 {
 
             carry = sum / 10;
             sum = sum % 10;
-            cur.next = new ListNode1(sum);
+            cur.next = new Day02(sum);
 
             cur = cur.next;
             if (l1 != null)
@@ -191,7 +190,7 @@ public class Solution1 {
                 l2 = l2.next;
         }
         if (carry == 1) {
-            cur.next = new ListNode1(carry);
+            cur.next = new Day02(carry);
         }
 
         return pre.next;
